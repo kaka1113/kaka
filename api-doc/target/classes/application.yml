@@ -1,6 +1,6 @@
 server:
   #端口号
-  port: 52000
+  port: 92000
 
 spring:
   application:
@@ -16,131 +16,11 @@ knife4j:
   enableAggregation: true
   nacos:
     enable: true
-    serviceUrl: http://127.0.0.1:8848/nacos/
+    serviceUrl: http://192.168.16.239:8848/nacos/
     routes:
-      - name: 开放接口 - 公共服务
-        serviceName: mg-open-api
-        namespaceId: mos
-        location: /v2/api-docs?group=开放接口 - 公共服务
-        servicePath: /mg/openapi
-        order: 100
-      - name: 开放接口 - 支付服务
-        serviceName: mg-open-api
-        namespaceId: mos
-        location: /v2/api-docs?group=开放接口 - 支付服务
-        servicePath: /mg/openapi
-        order: 101
-      - name: 开放接口 - 财务服务
-        serviceName: mg-open-api
-        namespaceId: mos
-        location: /v2/api-docs?group=开放接口 - 财务服务
-        servicePath: /mg/openapi
-        order: 102
-      - name: 开放接口 - 订单服务
-        serviceName: mg-open-api
-        namespaceId: mos
-        location: /v2/api-docs?group=开放接口 - 订单服务
-        servicePath: /mg/openapi
-        order: 103
-      - name: 开放接口 - 组织服务
-        serviceName: mg-open-api
-        namespaceId: mos
-        location: /v2/api-docs?group=开放接口 - 组织服务
-        servicePath: /mg/openapi
-        order: 104
       - name: 运营商企业WEB端 - 系统服务
-        serviceName: mg-company-web
+        serviceName: company-web
         namespaceId: mos
-        location: /v2/api-docs?group=运营商企业WEB端 - 系统服务
-        servicePath: /mg/companyweb
+        location: /v2/api-docs?group=企业WEB端 - 系统服务
+        servicePath: /ice/companyweb
         order: 200
-      - name: 运营商企业WEB端 - 商品服务
-        serviceName: mg-company-web
-        namespaceId: mos
-        location: /v2/api-docs?group=运营商企业WEB端 - 商品服务
-        servicePath: /mg/companyweb
-        order: 201
-      - name: 运营商企业WEB端 - 组织服务
-        serviceName: mg-company-web
-        namespaceId: mos
-        location: /v2/api-docs?group=运营商企业WEB端 - 组织服务
-        servicePath: /mg/companyweb
-        order: 202
-      - name: 运营商企业WEB端 - 公共服务
-        serviceName: mg-company-web
-        namespaceId: mos
-        location: /v2/api-docs?group=运营商企业WEB端 - 公共服务
-        servicePath: /mg/companyweb
-        order: 203
-      - name: 运营商企业WEB端 - 订单服务
-        serviceName: mg-company-web
-        namespaceId: mos
-        location: /v2/api-docs?group=运营商企业WEB端 - 订单服务
-        servicePath: /mg/companyweb
-        order: 204
-      - name: 运营商企业WEB端 - 会员服务
-        serviceName: mg-company-web
-        namespaceId: mos
-        location: /v2/api-docs?group=运营商企业WEB端 - 会员服务
-        servicePath: /mg/companyweb
-        order: 205
-      - name: 平台WEB端 - 组织服务
-        serviceName: mg-platform-web
-        namespaceId: mos
-        location: /v2/api-docs?group=平台WEB端 - 组织服务
-        servicePath: /mg/platformweb
-        order: 300
-      - name: 平台WEB端 - 商品服务
-        serviceName: mg-platform-web
-        namespaceId: mos
-        location: /v2/api-docs?group=平台WEB端 - 商品服务
-        servicePath: /mg/platformweb
-        order: 301
-      - name: 智慧零售 - 组织服务
-        serviceName: mg-smart-retail
-        namespaceId: mos
-        location: /v2/api-docs?group=智慧零售 - 组织服务
-        servicePath: /mg/smartretail
-        order: 400
-      - name: 智慧零售 - 公共服务
-        serviceName: mg-smart-retail
-        namespaceId: mos
-        location: /v2/api-docs?group=智慧零售 - 公共服务
-        servicePath: /mg/smartretail
-        order: 401
-      - name: 智慧零售 - 商品服务
-        serviceName: mg-smart-retail
-        namespaceId: mos
-        location: /v2/api-docs?group=智慧零售 - 商品服务
-        servicePath: /mg/smartretail
-        order: 402
-      - name: 智慧零售 - 订单服务
-        serviceName: mg-smart-retail
-        namespaceId: mos
-        location: /v2/api-docs?group=智慧零售 - 订单服务
-        servicePath: /mg/smartretail
-        order: 403
-      - name: 智慧零售 - 会员服务
-        serviceName: mg-smart-retail
-        namespaceId: mos
-        location: /v2/api-docs?group=智慧零售 - 会员服务
-        servicePath: /mg/smartretail
-        order: 404
-      - name: 妈咪全知道小程序 - 商品服务
-        serviceName: mg-momwow-mp
-        namespaceId: mos
-        location: /v2/api-docs?group=妈咪全知道小程序 - 商品服务
-        servicePath: /mg/momwowmp
-        order: 500
-      - name: 妈咪全知道小程序 - 订单服务
-        serviceName: mg-momwow-mp
-        namespaceId: mos
-        location: /v2/api-docs?group=妈咪全知道小程序 - 订单服务
-        servicePath: /mg/momwowmp
-        order: 501
-      - name: 妈咪全知道小程序 - 公共服务
-        serviceName: mg-momwow-mp
-        namespaceId: mos
-        location: /v2/api-docs?group=妈咪全知道小程序 - 公共服务
-        servicePath: /mg/momwowmp
-        order: 502
