@@ -1,0 +1,306 @@
+package com.gateon.mos.framework.async;
+
+import cn.afterturn.easypoi.excel.entity.ExportParams;
+import cn.afterturn.easypoi.excel.entity.TemplateExportParams;
+import cn.afterturn.easypoi.excel.entity.enmus.ExcelType;
+import cn.afterturn.easypoi.excel.entity.params.ExcelExportEntity;
+import cn.afterturn.easypoi.handler.inter.IExcelExportServer;
+import com.alibaba.fastjson.JSON;
+import com.gateon.mos.base.api.entity.CompanySysUserModel;
+import com.gateon.mos.base.api.file.*;
+import com.gateon.mos.base.api.result.ResultEnum;
+import com.gateon.mos.base.api.result.ResultModel;
+import com.gateon.mos.base.api.result.ResultUtil;
+import com.gateon.mos.common.api.feign.FileInfoAdminFeign;
+import com.gateon.mos.framework.exception.MOSException;
+import com.gateon.mos.framework.util.DateUtil;
+import com.gateon.mos.framework.util.ExcelAsyncUtils;
+import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.codec.binary.Base64;
+import org.apache.http.entity.ContentType;
+import org.springframework.beans.factory.InitializingBean;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.system.ApplicationHome;
+import org.springframework.mock.web.MockMultipartFile;
+import org.springframework.scheduling.annotation.Async;
+import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
+
+import javax.annotation.Resource;
+import java.io.ByteArrayInputStream;
+import java.io.File;
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * @author Vick
+ * @since 2021/10/18
+ */
+@Slf4j
+@Component
+public class FileTask implements InitializingBean {
+    private final Publisher publisher;
+    @Autowired
+    private FileInfoAdminFeign fileOperate;
+    /**
+     * 项目所在目录
+     */
+    private String projectDir;
+
+    public FileTask(Publisher publisher) {
+        this.publisher = publisher;
+        //this.fileOperate = fileOperate;
+    }
+
+    @Override
+    public void afterPropertiesSet() {
+//        ApplicationHome h = new ApplicationHome(getClass());
+//        File jarF = h.getSource();
+//        projectDir = jarF.getParentFile().toString();
+    }
+
+    /**
+     * 异步导入并生成导入文件
+     *
+     * @param fileName     生成文件名称的前缀[生成的文件名称为:fileName+"_"+"yyyyMMddHHmmss"格式的当前时间)]
+     * @param fileBytes    file bytes
+     * @param webLoginUser CompanySysUserModel
+     * @param importable   Importable
+     */
+    @Async
+    public void imports(String fileName, byte[] fileBytes, CompanySysUserModel webLoginUser, Importable importable, Object param) {
+        long beginTime = System.currentTimeMillis();
+        MultipartFile file = getUpLoadFile(fileName, fileBytes);
+        //先保存文件信息，再处理
+        Long fileInfoId = getFileId(String.valueOf(webLoginUser.getId()), fileName, FileInfoType.IMPORT);
+        //转base64
+        String outputStreamToBase64 = new String(Base64.encodeBase64(fileBytes));
+        //异步处理文件状态
+        saveFile(fileInfoId, outputStreamToBase64);
+        //处理文件数据
+        ResultModel<Void> resultModel = processImport(webLoginUser, importable, file, fileInfoId, param);
+        //导入完更新文件信息状态
+        updateFileStatus(fileInfoId, resultModel);
+        long endTime = System.currentTimeMillis();
+        log.info("导入" + fileName + "异步任务总耗时：{}秒", (endTime - beginTime) / 1000);
+    }
+
+    /**
+     * 同步生成导出文件
+     *
+     * @param optUserId 操作人ID
+     * @param fileName  生成文件名称的前缀[生成的文件名称为:fileName+"_"+"yyyyMMddHHmmss"格式的当前时间)]
+     * @param title     表格名称
+     * @param sheetName sheetName
+     * @param list      Excel对象数据List
+     * @param pojoClass Excel对象Class
+     */
+    public void export(String optUserId, String fileName, String title, String sheetName, List<?> list, Class<?> pojoClass) {
+        export(optUserId, fileName, ".xls", () -> ExcelAsyncUtils.exportExcel(title, sheetName, list, pojoClass));
+    }
+
+    /**
+     * 同步生成导出文件
+     *
+     * @param optUserId 操作人ID
+     * @param fileName  生成文件名称的前缀[生成的文件名称为:fileName+"_"+"yyyyMMddHHmmss"格式的当前时间)]
+     * @param sheetName sheetName
+     * @param list      Excel对象数据List
+     * @param pojoClass Excel对象Class
+     */
+    public void export(String optUserId, String fileName, String sheetName, List<?> list, Class<?> pojoClass) {
+        export(optUserId, fileName, null, sheetName, list, pojoClass);
+    }
+
+    /**
+     * 同步生成导出文件
+     *
+     * @param optUserId  操作人ID
+     * @param fileName   生成文件名称的前缀[生成的文件名称为:fileName+"_"+"yyyyMMddHHmmss"格式的当前时间)]
+     * @param sheetName  sheetName
+     * @param columnList Map对象列表
+     * @param exportList Excel对象数据List
+     */
+    public void export(String optUserId, String fileName, String sheetName, List<ExcelExportEntity> columnList, List<Map<String, Object>> exportList) {
+        export(optUserId, fileName, ".xls", () -> ExcelAsyncUtils.exportExcel(null, sheetName, columnList, exportList));
+    }
+
+    /**
+     * 同步生成导出文件
+     * 根据Map创建对应的Excel(一个excel 创建多个sheet)
+     *
+     * @param optUserId 操作人ID
+     * @param fileName  文件名
+     * @param list      多个Map key title 对应表格Title key entity 对应表格对应实体 key data
+     *                  Collection 数据
+     */
+    public void export(String optUserId, String fileName, List<Map<String, Object>> list, ExcelType type) {
+        export(optUserId, fileName, (type == null || type == ExcelType.HSSF) ? ".xls" : ".xlsx", () -> ExcelAsyncUtils.exportExcel(list, type == null ? ExcelType.HSSF : type));
+    }
+
+    /**
+     * 异步生成导出文件
+     * 大数据量导出
+     *
+     * @param optUserId          操作人
+     * @param fileName           文件名
+     * @param pojoClass          Excel对象Class
+     * @param excelExportService 查询数据的接口
+     * @param queryParams        查询数据的参数
+     * @param <T>                Excel对象Class类型
+     */
+    @Async
+    public <T> void export(String optUserId, String fileName, Class<T> pojoClass, IExcelExportServer excelExportService, Object queryParams) {
+        export(optUserId, fileName, ".xlsx", () -> {
+            ExportParams exportParams = new ExportParams(null, fileName);
+            exportParams.setType(ExcelType.XSSF);
+            return ExcelAsyncUtils.exportBigExcel(exportParams, pojoClass, excelExportService, queryParams);
+        });
+    }
+
+    /**
+     * 异步生成导出文件
+     * 大数据量导出
+     *
+     * @param optUserId          操作人
+     * @param fileName           生成文件名称的前缀[生成的文件名称为:fileName+"_"+"yyyyMMddHHmmss"格式的当前时间)]
+     * @param pojoClass          Excel对象Class
+     * @param excelExportService 查询数据的接口
+     * @param queryParams        查询数据的参数
+     * @param <T>                Excel对象Class类型
+     */
+    @Async
+    public <T> void export(String optUserId, String fileName, Class<T> pojoClass, Exportable<T> excelExportService, Object queryParams) {
+        export(optUserId, fileName, ".xls", () -> {
+            List<T> exportList = getExportList(fileName, excelExportService, queryParams);
+            return ExcelAsyncUtils.exportExcel(fileName, fileName, exportList, pojoClass);
+        });
+    }
+
+    /**
+     * 异步生成导出文件
+     * 大数据量导出
+     *
+     * @param optUserId          操作人
+     * @param fileName           生成文件名称的前缀[生成的文件名称为:fileName+"_"+"yyyyMMddHHmmss"格式的当前时间)]
+     * @param templateName       模板名
+     * @param excelExportService 查询数据的接口
+     * @param queryParams        查询数据的参数
+     * @param <T>                Excel对象Class类型
+     */
+    @Async
+    public <T> void export(String optUserId, String fileName, String templateName, Exportable<T> excelExportService, Object queryParams) {
+        List<T> exportList = getExportList(fileName, excelExportService, queryParams);
+        export(optUserId, fileName, templateName, exportList);
+    }
+
+    /**
+     * 同步生成导出文件
+     *
+     * @param optUserId    操作人ID
+     * @param fileName     生成文件名称的前缀[生成的文件名称为:fileName+"_"+"yyyyMMddHHmmss"格式的当前时间)]
+     * @param templateName 模板名
+     * @param exportList   Excel对象数据List
+     */
+    public <T> void export(String optUserId, String fileName, String templateName, List<T> exportList) {
+        export(optUserId, fileName, ".xls", () -> {
+            String path = projectDir + "/export-template/" + templateName;
+            TemplateExportParams params = new TemplateExportParams(path);
+            Map<String, Object> map = new HashMap<>(16);
+            map.put("list", exportList);
+            return ExcelAsyncUtils.exportExcel(params, map);
+        });
+    }
+
+    private ResultModel<Void> processImport(CompanySysUserModel webLoginUser, Importable importable, MultipartFile file, Long fileInfoId, Object param) {
+        ResultModel<Void> resultModel;
+        try {
+            resultModel = importable.imports(fileInfoId, file, webLoginUser, param);
+        } catch (Exception e) {
+            log.info("importable.imports occur error:{}", e.getMessage());
+            resultModel = ResultUtil.failure(e.getMessage() == null ? "没有获取到异常消息,请联系运营人员" : e.getMessage());
+        }
+        return resultModel;
+    }
+
+    private MultipartFile getUpLoadFile(String fileName, byte[] fileBytes) {
+        InputStream inputStream = new ByteArrayInputStream(fileBytes);
+        MultipartFile file;
+        try {
+            file = new MockMultipartFile(fileName, fileName, ContentType.APPLICATION_OCTET_STREAM.toString(), inputStream);
+        } catch (IOException e) {
+            throw new MOSException("上传字节流转换文件失败");
+        }
+        return file;
+    }
+
+    private Long getFileId(String optUserId, String fileName, String export) {
+        FileInfoAddRequest fileInfoAddRequest = new FileInfoAddRequest();
+        fileInfoAddRequest.setOperateType(export);
+        fileInfoAddRequest.setFileName(fileName);
+        fileInfoAddRequest.setCreateUserId(optUserId);
+        return fileOperate.add(fileInfoAddRequest);
+    }
+
+    private void saveFile(Long fileInfoId, String outputStreamToBase64) {
+        FileInfoMqRequest fileInfoMqRequest = new FileInfoMqRequest();
+        fileInfoMqRequest.setFileInfoId(fileInfoId);
+        fileInfoMqRequest.setBase64FileString(outputStreamToBase64);
+        publisher.send(JSON.toJSONString(fileInfoMqRequest));
+    }
+
+    private void updateFileStatus(Long fileInfoId, ResultModel<Void> resultModel) {
+        FileInfoUpdateRequest fileInfoUpdateRequest = new FileInfoUpdateRequest();
+        fileInfoUpdateRequest.setId(fileInfoId);
+        fileInfoUpdateRequest.setFileStatus(FileInfoStatus.SUCCESS);
+        if (resultModel.getCode() != 0) {
+            int msgLengthLimit = 30000;
+            String errorMsg = resultModel.getMsg().length() <= msgLengthLimit ? resultModel.getMsg() : resultModel.getMsg().substring(0, msgLengthLimit) + "... ...";
+
+            fileInfoUpdateRequest.setFileStatus(FileInfoStatus.FAILURE);
+            fileInfoUpdateRequest.setFailureReason(errorMsg);
+        }
+        fileOperate.update(fileInfoUpdateRequest);
+    }
+
+    private <T> List<T> getExportList(String fileName, Exportable<T> excelExportService, Object queryParams) {
+        //获取workbook
+        ExportParams exportParams = new ExportParams(null, fileName);
+        exportParams.setType(ExcelType.XSSF);
+        List<T> exportList = Collections.emptyList();
+        ResultModel<List<T>> resultModel = excelExportService.selectListForExcelExport(queryParams);
+        if (ResultEnum.SUCCESS.getKey().equals(String.valueOf(resultModel.getCode()))) {
+            exportList = resultModel.getData();
+        } else {
+            log.info("fetch " + fileName + " data while exporting occur error:" + resultModel.getMsg());
+        }
+        return exportList;
+    }
+
+    private void export(String optUserId, String fileName, String fileType, Executor executor) {
+        long beginTime = System.currentTimeMillis();
+        fileName = fileName + DateUtil.getDate(DateUtil.DATE_PATTERN5) + fileType;
+        //先保存文件信息，再处理
+        Long fileInfoId = getFileId(optUserId, fileName, FileInfoType.EXPORT);
+        //导出文件
+        String outputStreamToBase64 = executor.exec();
+        //异步处理文件状态
+        saveFile(fileInfoId, outputStreamToBase64);
+        long endTime = System.currentTimeMillis();
+        log.info("导出" + fileName + "异步任务总耗时：{}秒", (endTime - beginTime) / 1000);
+    }
+
+    private interface Executor {
+
+        /**
+         * @return base64编码的Excel文件内容
+         */
+        String exec();
+    }
+
+}

@@ -1,7 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c597edbc-3e4e-40bb-b6de-9bd2a79c0aae" name="Default Changelist" comment="" />
+    <list default="true" id="c597edbc-3e4e-40bb-b6de-9bd2a79c0aae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/api-doc/src/main/java/com/ice/api/doc/ApiDocApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-doc/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-doc/src/main/resources/file-appender.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-doc/src/main/resources/logback-dev.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/api-doc/src/main/resources/logback-prod.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api-doc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-doc/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +42,9 @@
     </option>
   </component>
   <component name="ProjectId" id="2AH0AC8zjbIqEsxxLovXap2xd6m" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -40,7 +54,23 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/framework" />
     <property name="settings.editor.selected.configurable" value="Errors" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\dev\workgit\kaka\core\framework" />
+      <recent name="E:\dev\workgit\kaka\api-doc" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ApiDocApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="api-doc" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ice.api.doc.ApiDocApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -53,6 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654651058272</updated>
       <workItem from="1654651061259" duration="1534000" />
+      <workItem from="1654665174418" duration="647000" />
     </task>
     <servers />
   </component>
@@ -60,6 +91,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1654665327195">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654665327195" />
     <state x="330" y="218" key="new project wizard" timestamp="1654651876640">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>

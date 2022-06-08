@@ -1,0 +1,42 @@
+
+
+
+
+# 以下说明已经过期，具体参考oms配置文件 update by tjq
+
+
+/**
+* @Author: qiang.su
+* @Date: 2020/4/21 11:10
+* @Desc:使用教程
+*/
+（1-3是每个模块第一次添加任务配置的时候需要操作）
+1.需要使用JOB的项目添加:
+xxl:
+  job:
+    adminAddresses: http://127.0.0.1:9999/xxl-job-admin
+    appName: gateon-job                                         //需要改成对应模块名（用spring.application.name就行）
+    ip:
+    port: 9988                                                  //需要改成暴露端口
+    accessToken:
+    logPath: /data/applogs/xxl-job/jobhandler/${spring.application.name}
+    logRetentionDays: 30
+
+2. 当前环境的http://localhost:9999/xxl-job-admin/ 中，左侧【执行器管理】新增执行器，填写正确的appName,选择自动注册。
+3. 模块需要一个job的包。和controller同级
+   参照 com.gateon.crm.api.api.open.job.config.JobExecuteConfig 添加一个config
+4. 添加任务目标方法
+   参照 com.gateon.mos.common.api.job.task.DemoTask
+        @XxlJob("taskTag")//任意取名
+        public ReturnT<String> needRegisterJobHandler(String param) throws Exception {
+           -- 任务内容 --
+            return ReturnT.SUCCESS;
+        }
+5. 两种启动任务的方式：
+（1）当前环境的http://localhost:9999/xxl-job-admin/ 中，左侧【任务管理】新增执任务。
+（2）代码中添加任务
+    @Autowired
+    private JobCustomizedUtils jobCustomizedUtils;
+
+    ReturnT<String> resp = jobCustomizedUtils.addJobTask("0 0 12 * * ?", "needRegisterJobHandler", 1, "测试任务");
+    其中resp.code=200是成功，错误信息在resp.content
