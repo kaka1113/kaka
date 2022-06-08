@@ -1,0 +1,90 @@
+server:
+  #端口号
+  port: 50000
+
+spring:
+  application:
+    #应用名称
+    name: mg-gateway
+
+  cloud:
+    #nacos  开发及测试可以用单节点模式，生产建议用集群模式
+    nacos:
+      #服务注册与发现
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: mos
+
+    sentinel:
+      transport:
+        dashboard: 127.0.0.1:53000
+        port: 58719
+
+    #网关配置
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+          lower-case-service-id: true
+      routes:
+        - id: mg-open-api
+          uri: lb://mg-open-api
+          predicates: Path=/mg/openapi/**
+          filters: StripPrefix= 2
+        - id: mg-company-web
+          uri: lb://mg-company-web
+          predicates: Path=/mg/companyweb/**
+          filters: StripPrefix= 2
+        - id: mg-smart-retail
+          uri: lb://mg-smart-retail
+          predicates: Path=/mg/smartretail/**
+          filters: StripPrefix= 2
+        - id: mg-momwow-mp
+          uri: lb://mg-momwow-mp
+          predicates: Path=/mg/momwowmp/**
+          filters: StripPrefix= 2
+        - id: mg-platform-web
+          uri: lb://mg-platform-web
+          predicates: Path=/mg/platformweb/**
+          filters: StripPrefix= 2
+
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 10MB
+
+  #mq
+  rabbitmq:
+    host: 192.168.16.239
+    port: 5672
+    username: guest
+    password: guest
+    listener:
+      simple:
+        retry:
+          enabled: true
+          max-attempts: 5
+
+  main:
+    allow-bean-definition-overriding: true
+
+  zipkin:
+    base-url: http://127.0.0.1:54000/
+    discovery-client-enabled: false
+    sender:
+      type: rabbit
+  sleuth:
+    sampler:
+      probability: 1
+
+management:
+  #端点检查
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+logging:
+  config: classpath:logback-dev.xml
+  file:
+    name: logs/mg-gateway

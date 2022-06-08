@@ -2,16 +2,166 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c597edbc-3e4e-40bb-b6de-9bd2a79c0aae" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/api-doc/src/main/java/com/ice/api/doc/ApiDocApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-doc/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-doc/src/main/resources/file-appender.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-doc/src/main/resources/logback-dev.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api-doc/src/main/resources/logback-prod.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-doc/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/api-doc/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/company-web/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/company-web/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/annotation/AttrDtoCollections.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/annotation/AttrDtoCollections.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/annotation/AttrDtoConvertSkip.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/annotation/AttrDtoConvertSkip.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/annotation/AutoIncKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/annotation/AutoIncKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/annotation/DbType.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/annotation/DbType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/annotation/DistributionLock.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/annotation/DistributionLock.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/annotation/IgnoreLogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/annotation/IgnoreLogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/annotation/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/annotation/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/annotation/RedisKeyExpireListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/annotation/RedisKeyExpireListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/aop/AfterReturnAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/aop/AfterReturnAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/aop/DBTypeAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/aop/DBTypeAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/aop/DisLockAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/aop/DisLockAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/aop/LogAspect.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/aop/LogAspect.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/autogenerator/CodeGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/autogenerator/CodeGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/cache/CacheRepositoryTemplate.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/cache/CacheRepositoryTemplate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/cache/EhCacheUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/cache/EhCacheUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/db/DataSourceKey.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/db/DataSourceKey.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/db/DataSourceProxyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/db/DataSourceProxyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/db/DynamicDataSourceContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/db/DynamicDataSourceContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/db/DynamicRoutingDataSource.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/db/DynamicRoutingDataSource.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/disruptor/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/disruptor/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/job/JobCustomizedUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/job/JobCustomizedUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/job/JobModifyRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/job/JobModifyRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/job/README" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/job/README" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/job/XxlJob.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/job/XxlJob.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/job/XxlJobGroup.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/job/XxlJobGroup.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/job/XxlJobInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/job/XxlJobInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/mongo/MongoEventListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/mongo/MongoEventListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/mq/FrameworkConsumerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/mq/FrameworkConsumerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/mq/RocketMqSendUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/mq/RocketMqSendUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/RemoteClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/RemoteClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/RemoteServerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/RemoteServerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/RemoteService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/RemoteService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/codec/Message.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/codec/Message.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/codec/MessageDecoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/codec/MessageDecoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/codec/MessageEncoder.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/codec/MessageEncoder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/config/NettyConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/config/NettyConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/msg/ClientRpcAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/msg/ClientRpcAnswer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/msg/MsgHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/msg/MsgHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/msg/RpcAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/msg/RpcAnswer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/msg/ServerRpcAnswer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/msg/ServerRpcAnswer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/netty/msg/SocketManagerHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/netty/msg/SocketManagerHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/redis/DefaultRedisListenerContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/redis/DefaultRedisListenerContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/redis/ErrorHandlerListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/redis/ErrorHandlerListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/redis/RedisExpireListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/redis/RedisExpireListener.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/redis/RedisKeyExpireService.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/redis/RedisKeyExpireService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/AutoDBScript.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/AutoDBScript.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/Schema.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/Schema.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/Table.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/Table.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/column/BigIntColumnParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/column/BigIntColumnParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/column/ColumnParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/column/ColumnParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/column/DateTimeColumnParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/column/DateTimeColumnParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/column/DefaultColumnParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/column/DefaultColumnParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/column/EnumColumnParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/column/EnumColumnParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/column/IntColumnParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/column/IntColumnParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/column/SetColumnParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/column/SetColumnParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/column/StringColumnParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/column/StringColumnParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/column/TimeColumnParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/column/TimeColumnParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/schema/column/YearColumnParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/schema/column/YearColumnParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/sentinel/AdviseMethodInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/sentinel/AdviseMethodInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/thread/RejectedEventHandlerCallback.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/thread/RejectedEventHandlerCallback.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/thread/ThreadMdcUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/thread/ThreadMdcUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/thread/ThreadPoolExecutorMdcWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/thread/ThreadPoolExecutorMdcWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/thread/ThreadPoolUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/thread/ThreadPoolUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/tracing/TracingBeanPostProcessor.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/tracing/TracingBeanPostProcessor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/tracing/TracingContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/tracing/TracingContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/tracing/TracingContextIntercept.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/tracing/TracingContextIntercept.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/tracing/TracingFeignClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/tracing/TracingFeignClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/tracing/TracingFeignObjectWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/tracing/TracingFeignObjectWrapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/tracing/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/tracing/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/zk/IClient.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/zk/IClient.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/zk/IRedisClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/zk/IRedisClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/zk/IZkClientImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/zk/IZkClientImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/zk/rule/IRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/zk/rule/IRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/component/zk/rule/RandomRule.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/component/zk/rule/RandomRule.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/config/CacheConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/config/CacheConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/config/ComponentConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/config/ComponentConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/config/FormatSerializerConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/config/FormatSerializerConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/config/MybatisPlusConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/config/MybatisPlusConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/config/RedissonAutoConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/config/RedissonAutoConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/config/RedissonProperties.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/config/RedissonProperties.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/config/SentinelConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/config/SentinelConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/config/ThreadPoolConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/config/ThreadPoolConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/enums/DelFlagEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/enums/DelFlagEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/enums/ModuleEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/enums/ModuleEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/enums/PayTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/enums/PayTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/enums/ProjectEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/enums/ProjectEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/enums/RoleEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/enums/RoleEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/enums/WhetherEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/enums/WhetherEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/exception/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/exception/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/exception/MgException.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/exception/MgException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/jwt/JwtUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/jwt/JwtUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/lock/AspectDisLockContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/lock/AspectDisLockContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/lock/AspectDisLockHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/lock/AspectDisLockHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/lock/AspectDisLockKeyParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/lock/AspectDisLockKeyParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/lock/DistributedLocker.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/lock/DistributedLocker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/lock/RedissonDistributedLocker.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/lock/RedissonDistributedLocker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/model/ApiEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/model/ApiEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/model/CompanySysUserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/model/CompanySysUserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/model/CustomerModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/model/CustomerModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/model/FrameworkRockMqConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/model/FrameworkRockMqConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/model/ResultModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/model/ResultModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/model/SmartBUserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/model/SmartBUserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/page/Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/page/Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/page/PageRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/page/PageRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/redis/BaseRedisDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/redis/BaseRedisDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/redis/FastJson2JsonRedisSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/redis/FastJson2JsonRedisSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/redis/RedisConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/redis/RedisConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/redis/RedisHandle.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/redis/RedisHandle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/response/ResponseErrorCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/response/ResponseErrorCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/response/ResponseModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/response/ResponseModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/response/ResponseUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/response/ResponseUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/serializer/BigDecimalJsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/serializer/BigDecimalJsonSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/serializer/LongJsonSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/serializer/LongJsonSerializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/ArithUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/ArithUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/CommonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/CommonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/ConvertDtoUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/ConvertDtoUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/DateUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/DateUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/DocNoUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/DocNoUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/ExcelUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/ExcelUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/ExceptionUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/ExceptionUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/HttpUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/HttpUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/HttpUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/HttpUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/LocalDateTimeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/LocalDateTimeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/MosApiUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/MosApiUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/MyStringUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/MyStringUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/ObjectUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/ObjectUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/PaymentUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/PaymentUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/RedissLockUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/RedissLockUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/SnowflakeUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/SnowflakeUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/SpringUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/SpringUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/UuidGenerator.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/UuidGenerator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/CompanySysUserModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/CompanySysUserModel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/ExcelAsyncUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/ExcelAsyncUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/Exportable.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/Exportable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/FileInfoAddRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/FileInfoAddRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/FileInfoMqRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/FileInfoMqRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/FileInfoStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/FileInfoStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/FileInfoType.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/FileInfoType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/FileInfoUpdateRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/FileInfoUpdateRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/FileOperate.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/FileOperate.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/Importable.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/Importable.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/Publisher.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/Publisher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/ResultEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/ResultEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/api/FileTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/api/FileTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/export/api/FileTask.txt" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/api/FileTask.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/json/AbstractJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/json/AbstractJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/json/FastJsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/json/FastJsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/json/IJson.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/json/IJson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/json/JacksonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/json/JacksonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/json/JsonEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/json/JsonEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/json/JsonFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/json/JsonFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/json/SpringJsonUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/json/SpringJsonUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/mg/framework/util/proxy/JdkProxy.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/proxy/JdkProxy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/sys-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/core/sys-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sys-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/sys-service/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +191,9 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenRunner">
+    <option name="skipTests" value="true" />
+  </component>
   <component name="ProjectId" id="2AH0AC8zjbIqEsxxLovXap2xd6m" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="1" id="Add" />
@@ -54,16 +207,32 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/core/framework" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/sys-service" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.mg.sys.api.request.sys" />
+      <recent name="com.mg.sys.api.feign" />
+      <recent name="com.mg.sys.api.constants" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\dev\workgit\kaka\sys-service" />
+      <recent name="E:\dev\workgit\kaka\gateway" />
+      <recent name="E:\dev\workgit\kaka\app\company-web" />
+      <recent name="E:\dev\workgit\kaka\core\sys-api" />
       <recent name="E:\dev\workgit\kaka\core\framework" />
-      <recent name="E:\dev\workgit\kaka\api-doc" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="JUnit.All in kaka">
+    <configuration name="All in kaka" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="kaka" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ApiDocApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="api-doc" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ice.api.doc.ApiDocApplication" />
@@ -71,6 +240,53 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ice.ice.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MgCompanyWebApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="company-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ice.ice.company.web.MgCompanyWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MgCompanyWebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="company-web" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mg.mg.company.web.MgCompanyWebApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MgGatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mg.mg.gateway.GatewayApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsSysServiceApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sys-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ice.sys.service.SysServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MsSysServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="sys-service" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.mg.sys.service.MsSysServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in kaka" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -83,7 +299,7 @@
       <option name="presentableId" value="Default" />
       <updated>1654651058272</updated>
       <workItem from="1654651061259" duration="1534000" />
-      <workItem from="1654665174418" duration="647000" />
+      <workItem from="1654665174418" duration="5248000" />
     </task>
     <servers />
   </component>
@@ -91,10 +307,38 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="617" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1654669779317">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="617" y="449" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654669779317" />
+    <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1654669721621">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="690" y="270" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654669721621" />
     <state x="740" y="279" key="FileChooserDialogImpl" timestamp="1654665327195">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654665327195" />
+    <state width="1876" height="280" key="GridCell.Tab.0.bottom" timestamp="1654667779506">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1876" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654667779506" />
+    <state width="1876" height="280" key="GridCell.Tab.0.center" timestamp="1654667779506">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1876" height="280" key="GridCell.Tab.0.center/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654667779506" />
+    <state width="1876" height="280" key="GridCell.Tab.0.left" timestamp="1654667779506">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1876" height="280" key="GridCell.Tab.0.left/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654667779506" />
+    <state width="1876" height="280" key="GridCell.Tab.0.right" timestamp="1654667779506">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state width="1876" height="280" key="GridCell.Tab.0.right/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654667779506" />
+    <state x="461" y="156" key="SettingsEditor" timestamp="1654667650401">
+      <screen x="0" y="0" width="1920" height="1050" />
+    </state>
+    <state x="461" y="156" key="SettingsEditor/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654667650401" />
     <state x="330" y="218" key="new project wizard" timestamp="1654651876640">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
