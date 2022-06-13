@@ -3,191 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="c597edbc-3e4e-40bb-b6de-9bd2a79c0aae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-doc/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-doc/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api-doc/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/api-doc/target/classes/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/company-web/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/app/company-web/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/api/FileTask.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/src/main/java/com/ice/framework/util/export/api/FileTask.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/annotation/AttrDtoCollections.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/annotation/AttrDtoConvertSkip.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/annotation/AutoIncKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/annotation/DbType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/annotation/DistributionLock.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/annotation/IgnoreLogAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/annotation/LogAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/annotation/RedisKeyExpireListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/aop/AfterReturnAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/aop/DBTypeAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/aop/DisLockAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/aop/LogAspect.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/autogenerator/CodeGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/cache/CacheRepositoryTemplate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/cache/EhCacheUtils$RepositoryResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/cache/EhCacheUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/db/DataSourceKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/db/DataSourceProxyConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/db/DynamicDataSourceContextHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/db/DynamicRoutingDataSource.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/disruptor/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/job/JobCustomizedUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/job/JobModifyRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/job/XxlJob.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/job/XxlJobGroup.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/job/XxlJobInfo.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/mongo/MongoEventListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/mq/FrameworkConsumerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/mq/RocketMqSendUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/RemoteClientService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/RemoteClientService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/RemoteServerService$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/RemoteServerService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/RemoteService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/codec/Message.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/codec/MessageDecoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/codec/MessageEncoder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/config/NettyConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/msg/ClientRpcAnswer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/msg/MsgHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/msg/RpcAnswer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/msg/ServerRpcAnswer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/netty/msg/SocketManagerHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/redis/DefaultRedisListenerContainer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/redis/ErrorHandlerListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/redis/RedisExpireListener.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/AutoDBScript.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/Database.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/Schema.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/Table.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/column/BigIntColumnParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/column/ColumnParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/column/DateTimeColumnParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/column/DefaultColumnParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/column/EnumColumnParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/column/IntColumnParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/column/SetColumnParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/column/StringColumnParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/column/TimeColumnParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/schema/column/YearColumnParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/thread/RejectedEventHandlerCallback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/thread/ThreadMdcUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/thread/ThreadPoolExecutorMdcWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/thread/ThreadPoolUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/tracing/TracingBeanPostProcessor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/tracing/TracingContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/tracing/TracingContextIntercept.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/tracing/TracingFeignClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/tracing/TracingFeignObjectWrapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/tracing/WebConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/zk/IClient.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/zk/IRedisClientImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/zk/IZkClientImpl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/zk/rule/IRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/component/zk/rule/RandomRule.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/config/CacheConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/config/ComponentConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/config/FormatSerializerConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/config/MybatisPlusConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/config/RedissonAutoConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/config/RedissonProperties.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/config/SentinelConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/config/ThreadPoolConfig.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/enums/DelFlagEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/enums/ModuleEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/enums/PayTypeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/enums/ProjectEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/enums/RoleEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/enums/WhetherEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/exception/GlobalExceptionHandler.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/exception/MgException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/jwt/JwtUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/lock/AspectDisLockContextHolder$CheckLockCallback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/lock/AspectDisLockContextHolder$KeyContent.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/lock/AspectDisLockContextHolder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/lock/AspectDisLockHelper$DoLockCallback.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/lock/AspectDisLockHelper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/lock/AspectDisLockKeyParser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/lock/DistributedLocker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/lock/RedissonDistributedLocker.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/model/ApiEntity$ApiEntityBuilder.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/model/ApiEntity.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/model/CompanySysUserModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/model/CustomerModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/model/FrameworkRockMqConstant.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/model/ResultModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/model/SmartBUserModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/page/Page.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/page/PageRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/redis/BaseRedisDao.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/redis/FastJson2JsonRedisSerializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/redis/RedisConfiguration.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/redis/RedisHandle.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/response/ResponseErrorCodeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/response/ResponseModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/response/ResponseUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/serializer/BigDecimalJsonSerializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/serializer/LongJsonSerializer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/ArithUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/CommonUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/ConvertDtoUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$10.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$11.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$12.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$13.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$14.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$3.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$4.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$5.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$6.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$7.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$8.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil$9.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DateUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DocNoUtil$DocTypeEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/DocNoUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/ExcelUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/ExceptionUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/HttpUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/HttpUtils$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/HttpUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/LocalDateTimeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/MosApiUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/MyStringUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/ObjectUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/PaymentUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/RedissLockUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/SnowflakeUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/SpringUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/UuidGenerator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/CompanySysUserModel.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/ExcelAsyncUtils.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/Exportable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/FileInfoAddRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/FileInfoMqRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/FileInfoStatus.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/FileInfoType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/FileInfoUpdateRequest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/FileOperate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/Importable.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/Publisher.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/ResultEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/api/FileTask$Executor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/api/FileTask$Processor.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/export/api/FileTask.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/json/AbstractJson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/json/FastJsonUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/json/IJson.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/json/JacksonUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/json/JsonEnum.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/json/JsonFactory$Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/json/JsonFactory$Test2.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/json/JsonFactory.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/json/SpringJsonUtil.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/proxy/JdkProxy$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/framework/target/classes/com/mg/framework/util/proxy/JdkProxy.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/sys-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/sys-service/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -331,7 +146,10 @@
       <option name="presentableId" value="Default" />
       <updated>1654651058272</updated>
       <workItem from="1654651061259" duration="1534000" />
-      <workItem from="1654665174418" duration="6759000" />
+      <workItem from="1654665174418" duration="11076000" />
+      <workItem from="1654734980960" duration="12114000" />
+      <workItem from="1654821709362" duration="1610000" />
+      <workItem from="1655082240677" duration="9082000" />
     </task>
     <servers />
   </component>
@@ -355,54 +173,54 @@
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
     <state x="740" y="279" key="FileChooserDialogImpl/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654665327195" />
-    <state width="1876" height="346" key="GridCell.Tab.0.bottom" timestamp="1654672440549">
+    <state width="1876" height="280" key="GridCell.Tab.0.bottom" timestamp="1654687461540">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440549" />
-    <state width="1876" height="346" key="GridCell.Tab.0.center" timestamp="1654672440549">
+    <state width="1876" height="280" key="GridCell.Tab.0.bottom/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687461540" />
+    <state width="1876" height="280" key="GridCell.Tab.0.center" timestamp="1654687461539">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.0.center/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440549" />
-    <state width="1876" height="346" key="GridCell.Tab.0.left" timestamp="1654672440549">
+    <state width="1876" height="280" key="GridCell.Tab.0.center/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687461539" />
+    <state width="1876" height="280" key="GridCell.Tab.0.left" timestamp="1654687461539">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.0.left/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440549" />
-    <state width="1876" height="346" key="GridCell.Tab.0.right" timestamp="1654672440549">
+    <state width="1876" height="280" key="GridCell.Tab.0.left/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687461539" />
+    <state width="1876" height="280" key="GridCell.Tab.0.right" timestamp="1654687461539">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.0.right/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440549" />
-    <state width="1876" height="346" key="GridCell.Tab.1.bottom" timestamp="1654672440433">
+    <state width="1876" height="280" key="GridCell.Tab.0.right/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687461539" />
+    <state width="1876" height="346" key="GridCell.Tab.1.bottom" timestamp="1654687441646">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440433" />
-    <state width="1876" height="346" key="GridCell.Tab.1.center" timestamp="1654672440433">
+    <state width="1876" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687441646" />
+    <state width="1876" height="346" key="GridCell.Tab.1.center" timestamp="1654687441645">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.1.center/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440433" />
-    <state width="1876" height="346" key="GridCell.Tab.1.left" timestamp="1654672440433">
+    <state width="1876" height="346" key="GridCell.Tab.1.center/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687441645" />
+    <state width="1876" height="346" key="GridCell.Tab.1.left" timestamp="1654687441645">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.1.left/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440433" />
-    <state width="1876" height="346" key="GridCell.Tab.1.right" timestamp="1654672440433">
+    <state width="1876" height="346" key="GridCell.Tab.1.left/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687441645" />
+    <state width="1876" height="346" key="GridCell.Tab.1.right" timestamp="1654687441646">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.1.right/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440433" />
-    <state width="1876" height="346" key="GridCell.Tab.2.bottom" timestamp="1654672440433">
+    <state width="1876" height="346" key="GridCell.Tab.1.right/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687441646" />
+    <state width="1876" height="346" key="GridCell.Tab.2.bottom" timestamp="1654687441646">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440433" />
-    <state width="1876" height="346" key="GridCell.Tab.2.center" timestamp="1654672440433">
+    <state width="1876" height="346" key="GridCell.Tab.2.bottom/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687441646" />
+    <state width="1876" height="346" key="GridCell.Tab.2.center" timestamp="1654687441646">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.2.center/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440433" />
-    <state width="1876" height="346" key="GridCell.Tab.2.left" timestamp="1654672440433">
+    <state width="1876" height="346" key="GridCell.Tab.2.center/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687441646" />
+    <state width="1876" height="346" key="GridCell.Tab.2.left" timestamp="1654687441646">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.2.left/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440433" />
-    <state width="1876" height="346" key="GridCell.Tab.2.right" timestamp="1654672440433">
+    <state width="1876" height="346" key="GridCell.Tab.2.left/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687441646" />
+    <state width="1876" height="346" key="GridCell.Tab.2.right" timestamp="1654687441646">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
-    <state width="1876" height="346" key="GridCell.Tab.2.right/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654672440433" />
+    <state width="1876" height="346" key="GridCell.Tab.2.right/0.0.1920.1050/1920.9.1920.1080@0.0.1920.1050" timestamp="1654687441646" />
     <state x="461" y="156" key="SettingsEditor" timestamp="1654667650401">
       <screen x="0" y="0" width="1920" height="1050" />
     </state>
